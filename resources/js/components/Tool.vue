@@ -66,7 +66,7 @@ export default {
 
         resources() {
             return _.filter(Nova.config.resources, (r) => {
-                return r.groupSlug === this.groupSlug && r.subGroup
+                return r.groupSlug === this.groupSlug && r.subGroup && r.authorizedToViewAny
             })
         },
 
